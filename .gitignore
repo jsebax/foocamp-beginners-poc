@@ -2,6 +2,7 @@
 
 # compiled output
 /build/
+/dist/
 
 # dependencies
 /node_modules/
@@ -12,6 +13,9 @@
 # css compiled
 /static/*.css
 /static/*.css.map
+
+# js bundle
+/static/*.js
 
 # misc
 stacy-debug.log
