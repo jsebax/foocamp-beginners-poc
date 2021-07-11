@@ -1,0 +1,14 @@
+.homepage {
+  margin-top: 20px;
+
+  &__games {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1%;
+  }
+
+  &__item {
+    flex-basis: 23%;
+    margin: 1%;
+  }
+}
