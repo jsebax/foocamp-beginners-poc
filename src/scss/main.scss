@@ -1,5 +1,6 @@
 // Abstracts
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 // Base
 @import 'base/normalize';
@@ -7,7 +8,7 @@
 @import 'base/typography';
 
 // Layout
-@import 'layout/grid';
+
 @import 'layout/header';
 
 // Components
