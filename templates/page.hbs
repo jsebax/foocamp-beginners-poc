@@ -15,7 +15,9 @@
     {{{module header}}}
 
     <main>
-      {{{module content}}}
+      {{#each components}}
+        {{{module this}}}
+      {{/each}}
     </main>
 
     <script src="main.bundle.js"></script>
