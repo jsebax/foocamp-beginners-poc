@@ -13,7 +13,5 @@
 
 // Components
 @import 'components/game';
-
-//  Pages
-@import 'pages/homepage';
-@import 'pages/game-detail';
+@import 'components/game-detail';
+@import 'components/game-list';
