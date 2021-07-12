@@ -8,7 +8,7 @@
 /node_modules/
 
 # site environment configuration
-/.env
+# /.env
 
 # css compiled
 /static/*.css
