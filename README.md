@@ -16,7 +16,9 @@ CF_SPACE="YOUR_CONTENTFUL_SPACE_ID"
 CF_ACCESS_TOKEN="YOUR_CONTENTFUL_SPACE_API_KEY"
 ```
 To see instructions on how to get these values go to these links:
+
 [Find Contentful space ID](https://www.contentful.com/help/find-space-id/)
+
 [Create Contentful API keys](https://www.contentful.com/developers/docs/references/authentication/#:~:text=You%20can%20also%20create%20API,and%20create%20your%20first%20token.)
 
 ## Dev server
