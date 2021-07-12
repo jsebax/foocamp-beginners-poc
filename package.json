@@ -4,10 +4,11 @@
   "scripts": {
     "stacy:serve": "stacy serve",
     "stacy:build": "stacy generate",
-    "webpack:dev": "webpack --mode development",
+    "webpack:dev": "webpack --config webpack.dev.js",
     "webpack:watch": "chokidar 'src/scss/**/*.scss' 'src/js/**/*.js' -c 'npm run webpack:dev'",
-    "dev": "npm-run-all -p webpack:* stacy:serve",
-    "build": "webpack --mode production"
+    "webpack:build": "webpack --config webpack.prod.js",
+    "dev": "npm-run-all -p webpack:dev webpack:watch stacy:serve",
+    "build": "npm-run-all -p webpack:build stacy:build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -15,6 +16,7 @@
     "babel-loader": "^8.2.2",
     "chokidar-cli": "^2.1.0",
     "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss-loader": "^6.1.1",
@@ -24,7 +26,8 @@
     "stacy": "^2.0.0",
     "style-loader": "^3.0.0",
     "webpack": "^5.44.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-merge": "^5.8.0"
   },
   "engines": {
     "node": ">=10.16.3"
