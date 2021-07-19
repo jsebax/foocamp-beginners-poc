@@ -1,12 +1,12 @@
 .header {
-  background-color: $red;
+  background-color: var(--red);
   text-align: center;
 
   &__title {
-    color: $white;
+    color: var(--white);
 
     &:hover {
-      color: $white;
+      color: var(--white);
     }
   }
 }
