@@ -7,8 +7,9 @@
     "webpack:dev": "webpack --config webpack.dev.js",
     "webpack:watch": "chokidar 'src/scss/**/*.scss' 'src/js/**/*.js' -c 'npm run webpack:dev'",
     "webpack:build": "webpack --config webpack.prod.js",
+    "env:create": "node create-env.js",
     "dev": "npm-run-all -p webpack:dev webpack:watch stacy:serve",
-    "build": "npm-run-all -p webpack:build stacy:build"
+    "build": "npm-run-all -p env:create webpack:build stacy:build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
