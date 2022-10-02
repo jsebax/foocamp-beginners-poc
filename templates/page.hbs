@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+    {{!-- Remove or add the correct fonts to be used in the project --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    {{{module header}}}
+    {{!-- Uncomment when header component is created in Contentful --}}
+    {{!-- {{{module header}}} --}}
 
     <main>
       {{#each components}}
